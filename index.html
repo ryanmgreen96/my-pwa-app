@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simple PWA Loader</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Offline Content Loader</h1>
+  <button onclick="changeBackground()">Change Background</button>
+<button onclick="loadContent('register1.html', '#section1')">Load Register 1 - Section 1</button>
+<button onclick="loadContent('register1.html', '#section2')">Load Register 1 - Section 2</button>
+  
+
+  <div id="content" style="margin-top: 20px; padding: 1em; border: 1px solid #ccc;">
+    <em>Content will appear here...</em>
+  </div>
+
+  <script src="jquery.min.js"></script>
+  <script src="script.js"></script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('sw.js');
+    }
+  </script>
+</body>
+</html>
