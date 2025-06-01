@@ -1,11 +1,12 @@
 const CACHE_NAME = 'my-pwa-cache-v1';
 const FILES_TO_CACHE = [
-  'index.html',
-  'jquery.min.js',
-  'script.js',
-  'style.css',
-  'register1.html',
-  'manifest.json'
+  '/my-pwa-app/',
+  '/my-pwa-app/index.html',
+  '/my-pwa-app/style.css',
+  '/my-pwa-app/script.js',
+  '/my-pwa-app/jquery.min.js',
+  '/my-pwa-app/register1.html',
+  '/my-pwa-app/manifest.json'
 ];
 
 self.addEventListener('install', (evt) => {
