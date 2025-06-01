@@ -1,9 +1,17 @@
 {
   "name": "Offline PWA Loader",
   "short_name": "PWA Loader",
-  "start_url": ".",
+  "start_url": "/my-pwa-app/index.html",
   "display": "standalone",
   "background_color": "#ffffff",
-  "theme_color": "#ffffff"
-
+  "theme_color": "#ffffff",
+  "icons": [
+    {
+      "src": "/my-pwa-app/Icon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ]
 }
+
+
